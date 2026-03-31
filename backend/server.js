@@ -20,6 +20,7 @@ app.use('/api/auth',     require('./routes/auth'));
 app.use('/api/groups',   require('./routes/groups'));
 app.use('/api/expenses', require('./routes/expenses'));
 app.use('/api/bills',    require('./routes/bills'));
+app.use('/api/trips',    require('./routes/trips'));
 
 // Socket.io — real time bill claiming
 io.on('connection', (socket) => {

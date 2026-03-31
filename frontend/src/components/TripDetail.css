@@ -1,0 +1,312 @@
+.trip-detail {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.trip-detail-header {
+  margin-bottom: var(--sp-6);
+}
+
+.trip-detail-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+/* Budget Overview */
+.trip-budget-overview {
+  margin-bottom: var(--sp-6);
+}
+
+.trip-budget-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: var(--sp-5);
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+}
+
+.trip-budget-remaining {
+  display: flex;
+  flex-direction: column;
+}
+
+.trip-budget-amount {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.trip-budget-stats {
+  display: flex;
+  gap: var(--sp-6);
+}
+
+.trip-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.trip-stat-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.trip-stat-value {
+  font-size: 1rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Categories */
+.trip-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-6);
+}
+
+.trip-category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-5) var(--sp-4);
+  text-align: center;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.trip-category-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.trip-category-emoji {
+  font-size: 1.5rem;
+}
+
+.trip-category-label {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+
+.trip-category-amount {
+  font-size: 1rem;
+  color: var(--text);
+}
+
+/* Add Expense */
+.trip-add-expense {
+  margin-bottom: var(--sp-6);
+}
+
+.trip-add-expense h3 {
+  margin-bottom: var(--sp-4);
+  font-size: 1rem;
+}
+
+.trip-add-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.trip-add-row {
+  display: flex;
+  gap: var(--sp-3);
+}
+
+.trip-add-row select {
+  flex: 0 0 180px;
+}
+
+.trip-add-form .input-with-prefix {
+  position: relative;
+}
+
+.trip-add-form .input-prefix {
+  position: absolute;
+  left: 14px;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.trip-add-form .input-with-prefix input {
+  padding-left: 38px;
+}
+
+/* Expenses List */
+.trip-expenses-list {
+  margin-bottom: var(--sp-6);
+}
+
+.trip-expenses-list h3 {
+  font-size: 1rem;
+  margin-bottom: var(--sp-3);
+}
+
+.trip-expenses-items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.trip-expense-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  transition: all var(--transition-fast);
+}
+
+.trip-expense-item:hover {
+  border-color: var(--primary-border);
+  box-shadow: var(--shadow-xs);
+}
+
+.trip-expense-info {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.trip-expense-cat-emoji {
+  font-size: 1.25rem;
+}
+
+.trip-expense-desc {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.trip-expense-date {
+  display: block;
+}
+
+.trip-expense-right {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.trip-expense-amount {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.trip-expense-delete {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+  opacity: 0;
+}
+
+.trip-expense-item:hover .trip-expense-delete {
+  opacity: 1;
+}
+
+.trip-expense-delete:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--danger);
+}
+
+/* Split Section */
+.trip-split-section {
+  margin-bottom: var(--sp-8);
+}
+
+.trip-split-result {
+  margin-top: var(--sp-4);
+  padding: var(--sp-6);
+  background: var(--bg-card);
+  border: 1px solid var(--primary-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-glow);
+}
+
+.trip-split-header {
+  text-align: center;
+  margin-bottom: var(--sp-5);
+}
+
+.trip-split-amount {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-top: 4px;
+}
+
+.trip-split-members {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.trip-split-member {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3);
+  background: var(--bg);
+  border-radius: var(--radius);
+}
+
+.trip-split-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background: var(--gradient);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  flex-shrink: 0;
+}
+
+.trip-split-name {
+  flex: 1;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.trip-split-member-amount {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 600px) {
+  .trip-budget-amount {
+    font-size: 1.75rem;
+  }
+  
+  .trip-add-row {
+    flex-direction: column;
+  }
+  
+  .trip-add-row select {
+    flex: 1;
+  }
+  
+  .trip-categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
